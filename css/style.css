@@ -1075,3 +1075,24 @@ Media queries
 		margin-bottom: 30px;
 	}
 }
+
+.column-1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  flex:1;
+
+}
+
+.row-1:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+
+hr.rounded {
+  border-top: 2px dotted #D7DBDD;
+  border-radius: 3px;
+}
+
