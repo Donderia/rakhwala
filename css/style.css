@@ -18,6 +18,9 @@
 body {
 	color:#EDF1F1;
 	background: #f7f7f7;
+/*	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/india-scroll.jpg);
+	background-repeat: no-repeat;
+	background: url(../img/india-scroll.jpg) top center;*/
 	line-height: 1.6em;
 }
 
@@ -330,7 +333,8 @@ section.section {
 
 #parallax1{
 	/*background-image: url(../img/parallax/red_fort.jpg);*/
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/parallax/red_fort.jpg);
+	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/image-indian-flag.png);
+	/*background-repeat: no-repeat;*/
 	height:330px;
 	margin-top:150px;
 }
@@ -420,7 +424,10 @@ section.section {
   height:720px;
 
   position: relative;
-	background: url(../img/IMG_20200317_201519.jpg) top center;
+	/*background: url(../img/main-div-backgrounds/mumbai-cb.jpg) top center;*/
+
+	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/mumbai-cb.jpg);
+
   background-size: cover;
 }
 
