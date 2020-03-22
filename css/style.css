@@ -333,8 +333,8 @@ section.section {
 
 #parallax1{
 	/*background-image: url(../img/parallax/red_fort.jpg);*/
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/image-indian-flag.png);
-	/*background-repeat: no-repeat;*/
+	background: url(../img/parallax/sky_and_bridge.jpg);
+	background-repeat: no-repeat;
 	height:330px;
 	margin-top:150px;
 }
@@ -426,7 +426,7 @@ section.section {
   position: relative;
 	/*background: url(../img/main-div-backgrounds/mumbai-cb.jpg) top center;*/
 
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/mumbai-cb.jpg);
+	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/amar-jyoti_2.jpeg);
 
   background-size: cover;
 }
@@ -1281,3 +1281,26 @@ hr.rounded {
     padding-top:3%;
 
 }
+
+.outer-div
+{
+  height: 100vh;
+  overflow: hidden;
+}
+.inner-div
+{
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  background-image: url(../img/main-div-backgrounds/indian-flag-dirt.jpg);
+}
+.inner-div:hover
+{
+  transform: scale(1.2);
+}
+
+
+
+Resources
