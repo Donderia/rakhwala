@@ -417,57 +417,7 @@ section.section {
   --- Intro ----
 =========================== */
 
-#intro {
-  width: 100%;
-  /*height: 60vh*/
 
-  height:720px;
-
-  position: relative;
-	/*background: url(../img/main-div-backgrounds/mumbai-cb.jpg) top center;*/
-
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/amar-jyoti_2.jpeg);
-
-  background-size: cover;
-}
-
-@media (min-width: 1024px) {
-	#intro {
-		background-attachment: fixed;
-	}
-}
-
-.intro-content {
-margin-right:7%;
-	background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-	padding: 0 15px;
-}
-
-.intro-content  h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 64px;
-  font-weight: 700;
-}
-
-.intro-content  h3 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 26px;
-  font-weight: 500;
-}
 
 @media (max-width: 767px) {
 	#intro {
@@ -1146,6 +1096,7 @@ hr.rounded {
 
    text-align: right;
    margin-right: 10%;
+   overflow: hidden;
 
 }
 
@@ -1160,7 +1111,17 @@ hr.rounded {
     border-color: white;
 
     display: inline-block;
+    z-index:-1;
+}
 
+.overlay {
+
+
+   position:relative;
+   width:640px;
+   height:430px; /* your iframe height */
+   top:430px;  /* your iframe height */
+   margin-top:-430px;  /* your iframe height */
 }
 
 .image-container img {
@@ -1302,6 +1263,118 @@ hr.rounded {
   transform: scale(1.2);
 }
 
+/* intro new custom*/
+
+.welocme-parent{
+
+height: 800px;
+
+}
+
+.welocme-parent img{
+
+      width: 100%;
+object-fit: cover;
+position: absolute;
+    z-index: -1;
+    height:720px;
+}
+
+.welcome-greeting {
+    position:relative;
+
+    height:200px;
+    width: 50%;
+    left:800px;
+    top:150px;
+}
+
+.welcome-greeting h2{
+      color: #fff;
+      font-size: 64px;
+      font-weight: 700;
+      text-align:center;
+}
+
+.welcome-greeting h3{
+
+color: #fff;
+      font-size: 26px;
+      font-weight: 700;
+
+       text-align:center;
+}
+
+.welcome-slider h3 {
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align:center;
+
+}
+
+.welcome-slider {
+
+    position:relative;
+    width:50%;
+    left:800px;
+    top:150px;
+}
 
 
-Resources
+
+
+#intro {
+  width: 100%;
+  /*height: 60vh*/
+
+  height:720px;
+
+  position: relative;
+	/*background: url(../img/main-div-backgrounds/mumbai-cb.jpg) top center;*/
+
+	/*background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/amar-jyoti_2.jpeg);*/
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/main-div-backgrounds/india-gate.png);
+
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+	#intro {
+		background-attachment: fixed;
+	}
+}
+
+.intro-content {
+margin-right:7%;
+	background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+	padding: 0 15px;
+}
+
+.intro-content  h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.intro-content  h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
