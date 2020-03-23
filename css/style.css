@@ -398,7 +398,7 @@ section.section {
 }
 
 .navbar-logo {
-	display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -410,7 +410,7 @@ section.section {
 }
 
 .navbar-collapse.in {
-	margin-top: -5px !important;
+	margin-top: -100px !important;
 }
 
 /*===========================
@@ -1308,8 +1308,8 @@ color: #fff;
 .welcome-slider h3 {
 
     color: #fff;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
     text-align:center;
 
 }
@@ -1378,3 +1378,74 @@ margin-right:7%;
   font-weight: 500;
 }
 
+
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+@media (max-width: 1024px) {
+  #call-to-action {
+    background-attachment: scroll;
+  }
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align:center;
+}
+
+#call-to-action .cta-letters {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align:center;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+  font-size: 18px;
+  text-align:center;
+}
+
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#call-to-action .cta-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+/* About Us! */
+.about-us-parent {
+display :flex;
+}
+
+.about-us-child {
+flex:1;
+}
