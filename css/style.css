@@ -18,10 +18,11 @@
 body {
 	color:#EDF1F1;
 	background: #f7f7f7;
-/*	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/india-scroll.jpg);
-	background-repeat: no-repeat;
+	/*background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(../img/main-div-backgrounds/blue-background.jpg);*/
+/*	background-repeat: no-repeat;
 	background: url(../img/india-scroll.jpg) top center;*/
 	line-height: 1.6em;
+	overflow-x:hidden;
 }
 
 .clear {
@@ -1100,6 +1101,10 @@ hr.rounded {
 
 }
 
+#map-feature{
+
+}
+
 .image-container iframe {
 
     text-align: right;
@@ -1109,19 +1114,29 @@ hr.rounded {
     border-style: solid;
     border-width: 10px;
     border-color: white;
-
     display: inline-block;
-    z-index:-1;
+
 }
 
-.overlay {
-
+.overlay-design {
 
    position:relative;
    width:640px;
    height:430px; /* your iframe height */
    top:430px;  /* your iframe height */
    margin-top:-430px;  /* your iframe height */
+   background:transparent;
+
+}
+
+#overlay1{
+
+z-index:2;
+}
+
+#overlay2{
+
+z-index:2;
 }
 
 .image-container img {

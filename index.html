@@ -164,8 +164,8 @@
 
             <div class="column-1" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="4500" >
                 <div class="image-container" >
-                    <div id="overlay" onClick="style.pointerEvents='none'"></div>
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lnNBwhIKY0XXQpkQyQ2-zyLPzEefAhp_&z=15" scrolling="no" allowfullscreen></iframe>
+                    <div id="overlay1" class="overlay-design"></div>
+                    <iframe id="map-feature1" src="https://www.google.com/maps/d/u/0/embed?mid=1lnNBwhIKY0XXQpkQyQ2-zyLPzEefAhp_&z=15"  ></iframe>
                 </div>
             </div>
 
@@ -206,7 +206,8 @@
 
             <div class="column-1" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="4500" >
                 <div class="image-container" >
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OziUQcXduSyrOZpsCNMOboDICbhkLr7b&z=18"></iframe>
+                    <div id="overlay2" class="overlay-design"></div>
+                    <iframe id="map-feature2" src="https://www.google.com/maps/d/u/0/embed?mid=1OziUQcXduSyrOZpsCNMOboDICbhkLr7b&z=18"></iframe>
                 </div>
             </div>
 
@@ -529,10 +530,36 @@
 <script src="js/stellar.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+
 <script src="aos/aos.js"></script>
 <script>
     AOS.init();
   </script>
+<script>
+
+    document.getElementById("overlay1").onclick = function() {overlayOff1()};
+    document.getElementById("overlay2").onclick = function() {overlayOff2()};
+    document.getElementById("map-feature1").onmouseout = function() {overlayOn1()};
+    document.getElementById("map-feature2").onmouseout = function() {overlayOn2()};
+
+    function overlayOff1() {
+        document.getElementById("overlay1").style.zIndex = "-1";
+    }
+
+    function overlayOff2() {
+        document.getElementById("overlay2").style.zIndex = "-1";
+    }
+
+    function overlayOn1() {
+        document.getElementById("overlay1").style.zIndex = "1";
+    }
+
+    function overlayOn2() {
+        document.getElementById("overlay2").style.zIndex = "1";
+    }
+
+</script>
+
 <!-- Contact Form JavaScript File -->
 <script src="contactform/contactform.js"></script>
 
